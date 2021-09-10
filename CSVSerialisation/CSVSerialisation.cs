@@ -4,9 +4,9 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using CSVDSerialisation.Exceptions;
+using CSVSerialisation.Exceptions;
 
-namespace CSVDSerialisation
+namespace CSVSerialisation
 {
     public class CSVDeserialiser<T> where T : new()
     {
@@ -108,7 +108,7 @@ namespace CSVDSerialisation
 
 }
 
-namespace CSVDSerialisation.Exceptions
+namespace CSVSerialisation.Exceptions
 {
     public class TypeMismatchException : Exception
     {
