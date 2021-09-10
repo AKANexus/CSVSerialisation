@@ -70,6 +70,10 @@ namespace CSVSerialisation
                         }
                         columns[i].SetValue(novoT, floResult);
                     }
+                    else
+                    {
+                        throw new UnsupportedTypeException(columns[i]);
+                    }
                 }
                 resultado.Add(novoT);
             }
